@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Finalize seu pedido na A&ccedil;aimoc Delivery." name="description"/>
+  <meta content="A&ccedil;aimoc Delivery" name="author"/>
+  <title>
+   Finalizar pedido | A&ccedil;aimoc Delivery
+  </title>
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1 class="site-heading text-center text-faded d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">
+     A&Ccedil;A&Iacute; &bull; FRUTAS &bull; ENERGIA
+    </span>
+    <span class="site-heading-lower">
+     A&ccedil;aimoc Delivery
+    </span>
+   </h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-3" id="mainNav">
+   <div class="container">
+    <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">
+     A&ccedil;aimoc Delivery
+    </a>
+    <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item px-lg-4">
+       <a class="nav-link text-uppercase" href="index.html">
+        In&iacute;cio
+       </a>
+      </li>
+      <li class="nav-item px-lg-4">
+       <a class="nav-link text-uppercase" href="about.html">
+        Sobre
+       </a>
+      </li>
+      <li class="nav-item px-lg-4">
+       <a class="nav-link text-uppercase" href="products.html">
+        Card&aacute;pio
+       </a>
+      </li>
+      <li class="nav-item px-lg-4">
+       <a class="nav-link text-uppercase active" href="store.html">
+        Finalizar pedido
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <section class="page-section pt-5 pb-5">
+   <div class="container">
+    <div class="text-center text-white mb-5">
+     <span class="badge bg-primary fs-6 px-3 py-2 mb-2">
+      FINALIZA&Ccedil;&Atilde;O
+     </span>
+     <h1 class="display-5 fw-bold">
+      Seu pedido est&aacute; quase pronto! 💜
+     </h1>
+     <p class="lead">
+      Confira os itens, informe seus dados e escolha como receber.
+     </p>
+    </div>
+    <div class="row g-4">
+     <div class="col-lg-6">
+      <div class="checkout-box h-100">
+       <h3 class="fw-bold mb-3">
+        Resumo do pedido
+       </h3>
+       <div id="checkoutItems">
+       </div>
+       <div class="cart-total border-top mt-3">
+        <span>
+         Total
+        </span>
+        <strong id="checkoutTotal">
+         R$ 0,00
+        </strong>
+       </div>
+       <a class="btn btn-outline-dark w-100 mt-3" href="products.html">
+        &larr; Voltar ao card&aacute;pio
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-6">
+      <div class="checkout-box h-100">
+       <h3 class="fw-bold mb-3">
+        Dados para entrega
+       </h3>
+       <form id="checkoutForm">
+        <div class="mb-3">
+         <label class="form-label fw-semibold">
+          Nome
+         </label>
+         <input class="form-control form-control-lg" id="customerName" placeholder="Seu nome" required=""/>
+        </div>
+        <div class="mb-3">
+         <label class="form-label fw-semibold">
+          WhatsApp
+         </label>
+         <input class="form-control form-control-lg" placeholder="(00) 00000-0000" required=""/>
+        </div>
+        <div class="mb-3">
+         <label class="form-label fw-semibold">
+          Como receber?
+         </label>
+         <select class="form-select form-select-lg">
+          <option>
+           Delivery
+          </option>
+          <option>
+           Retirar na loja
+          </option>
+         </select>
+        </div>
+        <div class="mb-3">
+         <label class="form-label fw-semibold">
+          Endere&ccedil;o
+         </label>
+         <textarea class="form-control" placeholder="Rua, n&uacute;mero, bairro e complemento" required="" rows="2"></textarea>
+        </div>
+        <div class="mb-3">
+         <label class="form-label fw-semibold">
+          Pagamento
+         </label>
+         <select class="form-select form-select-lg">
+          <option>
+           Pix
+          </option>
+          <option>
+           Cart&atilde;o na entrega
+          </option>
+          <option>
+           Dinheiro
+          </option>
+         </select>
+        </div>
+        <button class="btn btn-primary btn-lg w-100" id="finishOrder" type="submit">
+         Finalizar compra 💜
+        </button>
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="order-success rounded-4 p-4 p-lg-5 mt-4 text-center d-none" id="checkoutSuccess">
+     <div class="display-4">
+      🎉
+     </div>
+     <h2 class="fw-bold">
+      Pedido recebido!
+     </h2>
+     <p class="lead" id="customerResult">
+     </p>
+     <p class="mb-3">
+      N&uacute;mero do pedido:
+      <strong id="orderNumber">
+      </strong>
+     </p>
+     <a class="btn btn-primary" href="index.html">
+      Voltar para o in&iacute;cio
+     </a>
+    </div>
+   </div>
+  </section>
+  <footer class="footer text-faded text-center py-5">
+   <div class="container">
+    <p class="mb-1 fw-bold">
+     A&ccedil;aimoc Delivery 💜
+    </p>
+    <p class="m-0 small">
+     &copy; 2026 A&ccedil;aimoc Delivery &bull; Sabor que d&aacute; vontade de repetir.
+    </p>
+   </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+ </body>
+</html>
